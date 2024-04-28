@@ -1,0 +1,59 @@
+---
+import Instagram from "../icons/Instagram.astro";
+import Twitter from "../icons/Twitter.astro";
+import Facebook from "../icons/Facebook.astro";
+---
+
+<footer class="flex flex-col xl:px-24 px-[20px] py-6">
+  <div
+    class="flex xl:flex-row flex-col justify-between border-b border-gray-400 border-solid pb-6 items-center"
+  >
+    <div class="left flex flex-col gap-y-3 xs:pb-0 pb-3">
+      <h2 class="text-4xl font-semibold text-white">
+        RUTA<span class="text-green-500">SIMPLE</span>
+      </h2>
+      <div class="social-media flex gap-x-3 justify-center xl:justify-start">
+        <a
+          href="#"
+          class="text-black hover:text-green-500 transition-colors cursor-pointer"
+        >
+          <Instagram />
+        </a>
+        <a
+          href="#"
+          class="text-black hover:text-green-500 transition-colors cursor-pointer"
+        >
+          <Twitter />
+        </a>
+        <a
+          href="#"
+          class="text-black hover:text-green-500 transition-colors cursor-pointer"
+        >
+          <Facebook />
+        </a>
+      </div>
+    </div>
+    <div class="right flex gap-3 min-[700px]:flex-row flex-col items-center">
+      <a
+        href="#"
+        class="cursor-pointer hover:text-opacity-80 transition-all text-black text-lg"
+        >Politicas de privacidad</a
+      >
+      <a
+        href="#"
+        class="cursor-pointer hover:text-opacity-80 transition-all text-black text-lg"
+        >Servicio al cliente</a
+      >
+      <a
+        href="#"
+        class="cursor-pointer hover:text-opacity-80 transition-all text-lg text-black"
+        >Terminos y Condiciones</a
+      >
+    </div>
+  </div>
+  <div>
+    <p class="text-center text-black pt-6 text-xl">
+      © 2024 RutaSimple. Todos los derechos reservados
+    </p>
+  </div>
+</footer>

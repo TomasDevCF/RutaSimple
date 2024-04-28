@@ -1,0 +1,42 @@
+---
+interface Props {
+  videoPath: string;
+  button1: {
+    text: string;
+    link: string;
+  };
+  button2: {
+    text: string;
+    link: string;
+  };
+}
+
+const { videoPath, button1, button2 } = Astro.props;
+---
+
+<div class="w-full h-screen relative">
+  <video autoplay loop src={videoPath} class="w-full h-full object-cover">
+  </video>
+  <div
+    class="absolute top-0 w-full h-full bg-black/10 text-center flex justify-center"
+  >
+    <div
+      class="flex flex-col justify-center lg:w-[65%] w-full h-full text-white xs:px-6 px-1 gap-y-3"
+    >
+      <slot name="title" />
+      <slot name="description" />
+      <div class="flex w-full justify-center gap-x-3">
+        <a
+          href={button1.link}
+          class="cursor-pointer hover:border-green-600 hover:bg-green-600 bg-green-500 transition-all text-lg py-2 px-3 text-white rounded-lg"
+          >{button1.text}</a
+        >
+        <a
+          href={button2.link}
+          class="cursor-pointer hover:bg-white hover:text-black bg-transparent transition-color border-solid border-white text-lg border py-2 px-3 text-white rounded-lg"
+          >{button2.text}</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

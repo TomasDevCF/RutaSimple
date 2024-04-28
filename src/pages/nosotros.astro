@@ -1,0 +1,25 @@
+---
+import MainVideo from "../components/MainVideo.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Nosotros | RutaSimple, tu compañia de viajes de calidad"
+  description="En RutaSimple, queremos hacer que viajar sea accesible y emocionante para todos. Nos comprometemos a ofrecerte servicios de calidad, atención personalizada y opciones de viaje que se ajusten a tus deseos y necesidades."
+>
+  <main>
+    <MainVideo
+      button1={{ link: "#", text: "Comienza a viajar" }}
+      button2={{ link: "/", text: "Inicio" }}
+      videoPath="/assets/NosotrosVideo.mp4"
+    >
+      <h1 class="md:text-6xl text-5xl" slot="title">Sobre nosotros</h1>
+      <p class="md:text-2xl text-xl" slot="description">
+        En <span class="text-green-400">RutaSimple</span>, queremos hacer que
+        viajar sea accesible y emocionante para todos. Nos comprometemos a
+        ofrecerte servicios de calidad, atención personalizada y opciones de
+        viaje que se ajusten a tus deseos y necesidades.
+      </p>
+    </MainVideo>
+  </main>
+</Layout>

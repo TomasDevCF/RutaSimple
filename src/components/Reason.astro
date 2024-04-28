@@ -1,0 +1,23 @@
+---
+import Plane from "../icons/Plane.astro";
+import Money from "../icons/Money.astro";
+import Group from "../icons/Group.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  icon: "plane" | "money" | "group";
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<article
+  class="p-3 py-5 flex flex-col gap-y-3 bg-white border border-gray-300 border-solid rounded-md items-center"
+>
+  <header class="h-[120px] w-[120px]">
+    {icon === "plane" ? <Plane /> : icon === "money" ? <Money /> : <Group />}
+  </header>
+  <h3 class="text-2xl text-green-500">{title}</h3>
+  <p class="text-lg text-center">{description}</p>
+</article>

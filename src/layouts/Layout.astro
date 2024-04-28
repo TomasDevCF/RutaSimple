@@ -1,0 +1,87 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="turismo, vuelos baratos, viajes baratos, agencia de viajes"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-zinc-300">
+    <Header />
+    <slot />
+    <Footer />
+    <style is:global>
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: "Poppins", sans-serif;
+        background-size: 224px;
+      }
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+
+      main > section {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      @media (max-width: 1280px) {
+        main > section {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      h2,
+      h3 {
+        font-family: "Rubik", sans-serif;
+      }
+    </style>
+  </body>
+</html>

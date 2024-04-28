@@ -1,0 +1,24 @@
+---
+import OpinionCard from "./OpinionCard.astro";
+import { opinions } from "../data";
+---
+
+<section class="bg-green-400 pb-4">
+  <h2 class="text-4xl text-center pt-3">Testimonios</h2>
+  <h3 class="text-2xl text-gray-900 text-center pb-3">
+    ¿Que opina la gente de RutaSimple?
+  </h3>
+  <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
+    {
+      opinions.map((opinion) => (
+        <OpinionCard
+          country={opinion.country}
+          image={opinion.image}
+          name={opinion.name}
+          opinion={opinion.opinion}
+          province={opinion.province}
+        />
+      ))
+    }
+  </div>
+</section>

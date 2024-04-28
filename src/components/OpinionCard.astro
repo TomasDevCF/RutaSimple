@@ -1,0 +1,26 @@
+---
+interface Props {
+  image: string;
+  name: `${string} ${string}`;
+  province: string;
+  country: string;
+  opinion: string;
+}
+
+const { country, image, name, province, opinion } = Astro.props;
+---
+
+<article class="flex flex-col rounded-md bg-white p-3">
+  <div class="person-info flex gap-x-3">
+    <img
+      src={image}
+      alt={name}
+      class="h-[70px] object-cover w-[70px] rounded-full"
+    />
+    <div class="flex flex-col justify-center">
+      <b class="text-lg">{name}</b>
+      <p>{province}, {country}</p>
+    </div>
+  </div>
+  <p class="italic text-lg py-2">"{opinion}"</p>
+</article>

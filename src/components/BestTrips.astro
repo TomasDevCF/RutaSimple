@@ -1,0 +1,22 @@
+---
+import { trips } from "../data";
+import Trip from "./Trip.astro";
+---
+
+<section class="w-full pb-4">
+  <h2 class="text-3xl text-center py-6 font-medium">
+    Mejores viajes de <span class="text-green-400">RutaSimple</span>
+  </h2>
+  <div class="trips grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+    {
+      trips.map((trip) => (
+        <Trip
+          destination={trip.destination}
+          image={trip.image}
+          price={trip.price}
+          takeoff={trip.takeoff}
+        />
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+interface Props {
+  image: string;
+  takeoff: string;
+  destination: string;
+  price: number;
+  sectionClass?: string;
+}
+
+const { destination, image, price, takeoff, sectionClass } = Astro.props;
+---
+
+<article class={sectionClass + "flex flex-col rounded-t-xl bg-white"}>
+  <img
+    src={image}
+    alt={destination}
+    class="h-[300px] w-full aspect-square object-cover rounded-t-xl"
+  />
+  <div class="flight-info p-2">
+    <p class="text-2xl font-medium">{destination}</p>
+    <p class="text-2xl text-green-400">USD${price}</p>
+    <p class="text-1xl text-gray-500">Desde {takeoff}</p>
+  </div>
+</article>
