@@ -1,5 +1,3 @@
-import type { JSX } from "astro/jsx-runtime"
-
 export interface Trip {
   destination: string,
   image: string
