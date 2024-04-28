@@ -10,7 +10,7 @@ interface Props {
 const { country, image, name, province, opinion } = Astro.props;
 ---
 
-<article class="flex flex-col rounded-md bg-white p-3">
+<article class="flex flex-col rounded-md bg-white py-3 px-5">
   <div class="person-info flex gap-x-3">
     <img
       src={image}
@@ -22,5 +22,5 @@ const { country, image, name, province, opinion } = Astro.props;
       <p>{province}, {country}</p>
     </div>
   </div>
-  <p class="italic text-lg py-2">"{opinion}"</p>
+  <p class="italic text-md opacity-80 py-2">"{opinion}"</p>
 </article>

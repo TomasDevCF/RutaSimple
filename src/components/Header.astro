@@ -1,18 +1,16 @@
 ---
 import Menu from "./Menu";
-
-
 ---
 
 <header
-  class="w-full py-2 bg-gradient-to-b from-black/50 to-transparent fixed top-0 flex justify-between lg:px-24 px-4 z-20"
+  class="w-full py-2 bg-gradient-to-b from-black/50 to-transparent fixed top-0 flex justify-between lg:px-24 px-4 z-20 items-center"
   transition:persist
 >
   <a href="/" class="text-3xl logo text-white">
     RUTA<span class="text-green-400">SIMPLE</span>
   </a>
 
-  <div class="items-center gap-3 hidden sm:flex">
+  <div class="items-center gap-3 hidden sm:flex relative z-20">
     <a
       href="/"
       class="cursor-pointer hover:text-opacity-80 transition-all text-white text-lg"
@@ -28,11 +26,8 @@ import Menu from "./Menu";
       class="cursor-pointer hover:bg-green-400 hover:text-white bg-transparent transition-color border-solid border-green-400 text-lg border py-1 px-2 text-green-400 rounded-lg"
       >Comienza a viajar</a
     >
-
   </div>
   <Menu client:load />
-
-
 </header>
 
 <style>

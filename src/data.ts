@@ -27,37 +27,37 @@ export interface Reason {
 export const trips: Trip[] = [
   {
     destination: "Madrid",
-    image: "/assets/Madrid.webp",
+    image: "/assets/Madrid.jpg",
     takeoff: "Buenos Aires",
     price: 1300
   },
   {
     destination: "Miami",
-    image: "/assets/Miami.webp",
+    image: "/assets/Miami.jpg",
     takeoff: "Buenos Aires",
     price: 760
   },
   {
     destination: "Río de Janeiro",
-    image: "/assets/RioDeJaneiro.webp",
+    image: "/assets/RioDeJaneiro.jpg",
     takeoff: "Buenos Aires",
     price: 250
   },
   {
     destination: "Cancún",
-    image: "/assets/Cancun.webp",
+    image: "/assets/Cancun.jpg",
     takeoff: "Córdoba",
     price: 750
   },
   {
     destination: "Barcelona",
-    image: "/assets/Barcelona.webp",
+    image: "/assets/Barcelona.jpg",
     takeoff: "Buenos Aires",
     price: 1250
   },
   {
     destination: "París",
-    image: "/assets/Paris.webp",
+    image: "/assets/Paris.jpg",
     takeoff: "Buenos Aires",
     price: 1340
   }
@@ -65,21 +65,21 @@ export const trips: Trip[] = [
 
 export const opinions: Opinion[] = [
   {
-    image: "/assets/Person1.webp",
+    image: "/assets/Person1.jpg",
     name: "María Fernández",
     country: "Argentina",
     province: "Buenos Aires",
     opinion: "Mi familia y yo disfrutamos de una experiencia inolvidable gracias a RutaSimple. La atención al detalle y la personalización del viaje superaron nuestras expectativas. Definitivamente volveremos a planificar nuestras vacaciones con ellos."
   },
   {
-    image: "/assets/Person2.webp",
+    image: "/assets/Person2.jpg",
     name: "José González",
     country: "Argentina",
     province: "Buenos Aires",
     opinion: "Como viajero solo, siempre busco seguridad y comodidad. RutaSimple me proporcionó ambas, junto con una aventura emocionante. Su equipo de soporte estuvo allí para mí en cada paso del camino. Recomendado al 100%."
   },
   {
-    image: "/assets/Person3.webp",
+    image: "/assets/Person3.jpg",
     name: "Juan Pérez",
     country: "Argentina",
     province: "Córdoba",

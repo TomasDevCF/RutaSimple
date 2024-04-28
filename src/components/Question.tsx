@@ -23,7 +23,7 @@ export default function Question({ question, response, accordionSelected, setAcc
     >
       <b className="text-lg flex justify-between gap-x-2 cursor-pointer" onClick={changeAccordionSelected}>
         {question}
-        <button className="w-8 h-8">
+        <button className="min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px]">
           {accordionSelected === question ? <ArrowUp /> : <ArrowDown />}
         </button>
       </b>

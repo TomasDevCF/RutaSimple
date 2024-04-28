@@ -7,14 +7,17 @@ import WhyTravelWithUs from "../components/WhyTravelWithUs.astro";
 import MainVideo from "../components/MainVideo.astro";
 ---
 
-<Layout title="Bienvenido | RutaSimple, tu compañia de viajes de calidad" description="En RutaSimple, creemos que viajar debe ser una experiencia barata, sin complicaciones y llena de descubrimientos. Nuestro compromiso es ofrecerte una aventura inolvidable con la comodidad que mereces.">
+<Layout
+  title="Bienvenido | RutaSimple, tu compañia de viajes de calidad"
+  description="En RutaSimple, creemos que viajar debe ser una experiencia barata, sin complicaciones y llena de descubrimientos. Nuestro compromiso es ofrecerte una aventura inolvidable con la comodidad que mereces."
+>
   <main class="w-full h-full">
     <MainVideo
       button1={{ link: "#", text: "Comienza a viajar" }}
       button2={{ link: "/nosotros", text: "Conócenos" }}
       videoPath="/assets/RutaSimpleVideo.mp4"
     >
-      <h1 class="md:text-6xl text-5xl" slot="title">
+      <h1 class="md:text-6xl text-[2.5rem] leading-none" slot="title">
         Bienvenido a <span class="text-green-400">RutaSimple</span>
       </h1>
       <p class="md:text-2xl text-xl" slot="description">

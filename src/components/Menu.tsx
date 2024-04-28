@@ -24,7 +24,7 @@ export default function Menu() {
 
 function MenuList() {
   return (
-    <ul className="menu-list w-screen bg-white absolute left-0 pb-3 pt-1 text-center">
+    <ul className="menu-list w-screen bg-white/90 absolute left-0 top-0 pb-3 pt-[60px] -z-[1] text-center">
       <li className="menu-item py-2">
         <a
           href="/"
