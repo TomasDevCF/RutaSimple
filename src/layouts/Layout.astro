@@ -15,7 +15,6 @@ const { title, description } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +30,7 @@ const { title, description } = Astro.props;
       content="turismo, vuelos baratos, viajes baratos, agencia de viajes"
     />
     <meta name="robots" content="index, follow" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <title>{title}</title>
     <ViewTransitions />
   </head>
@@ -67,14 +67,12 @@ const { title, description } = Astro.props;
       }
 
       main > section {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 5rem 10px;
       }
 
       @media (max-width: 1280px) {
         main > section {
-          padding-left: 20px;
-          padding-right: 20px;
+          padding: 5rem 20px;
         }
       }
 

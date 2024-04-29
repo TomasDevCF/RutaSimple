@@ -12,6 +12,7 @@ const { destination, image, price, takeoff, sectionClass } = Astro.props;
 
 <article class={sectionClass + " flex flex-col rounded-t-xl bg-white"}>
   <img
+    loading="lazy"
     src={image}
     alt={destination}
     class="min-[350px]:h-[300px] h-[250px] w-full aspect-square object-cover rounded-t-xl"

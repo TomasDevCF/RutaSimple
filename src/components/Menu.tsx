@@ -39,7 +39,7 @@ function MenuList() {
       </li>
       <li className="menu-item py-2">
         <a
-          href="#"
+          href="/"
           className="cursor-pointer hover:bg-green-400 hover:text-black bg-transparent transition-color border-solid border-green-400 text-lg border py-1 px-2 text-green-400 rounded-lg"
         >Comienza a viajar</a>
       </li>

@@ -13,6 +13,7 @@ const { country, image, name, province, opinion } = Astro.props;
 <article class="flex flex-col rounded-md bg-white py-3 px-5">
   <div class="person-info flex gap-x-3">
     <img
+      loading="lazy"
       src={image}
       alt={name}
       class="h-[70px] object-cover w-[70px] rounded-full"
