@@ -21,11 +21,11 @@ const { videoPath, button1, button2 } = Astro.props;
     class="absolute top-0 w-full h-full bg-black/10 text-center flex justify-center"
   >
     <div
-      class="flex flex-col justify-center lg:w-[65%] w-full h-full text-white xs:px-6 px-3 gap-y-3"
+      class="flex flex-col justify-center lg:w-[65%] w-full h-full text-white xs:px-6 px-5 gap-y-3"
     >
       <slot name="title" />
       <slot name="description" />
-      <div class="flex w-full justify-center gap-x-3">
+      <div class="flex w-full max-[420px]:flex-col justify-center gap-3">
         <a
           href={button1.link}
           class="cursor-pointer hover:border-green-600 hover:bg-green-600 bg-green-500 transition-all min-[350px]:text-lg text-sm py-2 px-3 text-white rounded-lg"
